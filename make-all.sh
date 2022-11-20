@@ -6,8 +6,8 @@ make clean -C celslc
 make clean -C msa
 make clean -C wavimg
 # archiving current source code
-echo "- archiving current sources"
-./compress-drprobe_clt-src.sh
+#echo "- archiving current sources"
+#./compress-drprobe_clt-src.sh
 # making new object code from current sources
 echo "- making object code from current sources"
 make -C celslc
@@ -17,6 +17,6 @@ make -C wavimg
 echo "- updating the binary folder"
 ./update-bin.sh
 # archiving the binary folder
-echo "- archiving the binary folder"
-./compress-drprobe_clt-bin.sh
+#echo "- archiving the binary folder"
+#./compress-drprobe_clt-bin.sh
 echo "Done."
