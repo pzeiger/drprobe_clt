@@ -4,7 +4,7 @@
 f90c = ifort
 # - set compiler options
 cflags := -nologo -O3 -recursive -132 -assume byterecl -threads -static-intel -fpp
-#cflags := $(cflags) -Ddouble_precision
+cflags := $(cflags) -Ddouble_precision
 #   add -Ddouble_precision to compile for double precision calculation, default is single precision without this option
 incl = ../common 
 # mkl path must be adjusted to the local mkl installation
